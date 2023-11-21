@@ -9,5 +9,19 @@ public class QuestionSO : ScriptableObject
     [TextArea(2,6)]
     [SerializeField] string question = "Enter new Question text here";
 
+    public string GetQuestion()
+    {
+        return question;
+    }
 
+}
+
+public class Test
+{
+    QuestionSO questionSO;
+
+    void TestA()
+    {
+        string questionText = questionSO.GetQuestion();
+    }
 }
