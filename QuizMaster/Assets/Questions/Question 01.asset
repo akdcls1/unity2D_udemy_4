@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9903f5921709c404699cb4e466d77926, type: 3}
   m_Name: Question 01
   m_EditorClassIdentifier: 
-  question: "\uAC00\uC7A5 \uC7AC\uBC0C\uC5C8\uB358 \uD14C\uB9C8\uB294?"
+  question: What was the funniest escape theme?
   answers:
   - 1
   - 2

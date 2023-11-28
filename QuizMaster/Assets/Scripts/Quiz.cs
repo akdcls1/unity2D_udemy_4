@@ -12,6 +12,10 @@ public class Quiz : MonoBehaviour
     void Start()
     {
         questionText.text = question.GetQuestion();
+
+        TextMeshProUGUI buttonText = answerButtons[0].GetComponentInChildren<TextMeshProUGUI>();
+
+        buttonText.text = question.GetAnswer(0);
     }
 
 }
