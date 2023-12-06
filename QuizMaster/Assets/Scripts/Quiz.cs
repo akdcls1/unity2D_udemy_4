@@ -35,7 +35,9 @@ public class Quiz : MonoBehaviour
         }
         else
         {
-            
+            correctAnswerIndex = question.GetCorrectAnswerIndex();
+            string correctAnswer = question.GetAnswer(correctAnswerIndex);
+            questionText.text = "Sorry, \n"+correctAnswer;
         }
     }
 
