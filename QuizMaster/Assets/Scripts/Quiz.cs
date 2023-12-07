@@ -37,7 +37,7 @@ public class Quiz : MonoBehaviour
         {
             correctAnswerIndex = question.GetCorrectAnswerIndex();
             string correctAnswer = question.GetAnswer(correctAnswerIndex);
-            questionText.text = "Sorry, \n"+correctAnswer;
+            questionText.text = "Sorry,this answer is not correct \n"+correctAnswer;
         }
     }
 
