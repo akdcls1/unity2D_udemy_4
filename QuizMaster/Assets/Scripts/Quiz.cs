@@ -20,6 +20,7 @@ public class Quiz : MonoBehaviour
 
     public void OnAnswerSelected(int index)
     {
+        // 정답 선택했을 경우 나타날 모습
         Image buttonImage;
 
         if(index == question.GetCorrectAnswerIndex())
@@ -41,13 +42,13 @@ public class Quiz : MonoBehaviour
     }
 
     void GetNextQuestion()
-    {
+    {   // 다음 문제를 출제할 시 수정될 값들.
         SetButtonState(true);
         DisplayQuestion();
     }
 
     void DisplayQuestion()
-    {
+    {   // 화면에 보이는 문제
 
         questionText.text = question.GetQuestion();
 
