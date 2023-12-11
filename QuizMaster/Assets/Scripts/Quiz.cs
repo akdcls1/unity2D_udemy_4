@@ -44,8 +44,11 @@ public class Quiz : MonoBehaviour
     void GetNextQuestion()
     {   // 다음 문제를 출제할 시 수정될 값들.
         SetButtonState(true);
+        SetDefaultButtonSprites();
         DisplayQuestion();
     }
+
+
 
     void DisplayQuestion()
     {   // 화면에 보이는 문제
@@ -66,6 +69,15 @@ public class Quiz : MonoBehaviour
         {
             Button button = answerButtons[i].GetComponent<Button>();
             button.interactable = state;
+        }
+    }
+
+    void SetDefaultButtonSprites()
+    {
+        for(int i=0; i<answerButtons.Length; i++)
+        {
+            Image ButtonImage = answerButtons[i].GetComponent<ButtonImage>();
+            buttonsImage.sprite = defaultAnswerSprite;
         }
     }
 }
